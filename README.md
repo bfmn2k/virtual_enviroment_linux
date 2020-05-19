@@ -1,25 +1,25 @@
-#Sublime Text 3:
+# Sublime Text 3:
 https://www.sublimetext.com/3
 or
 sudo snap install sublime-text
 
 
 
-#Install Virtual Enviroment
+# Install Virtual Enviroment
 subl>python3 -m venv venv
 
 
-##Activate of virtual environment:
+## Activate of virtual environment:
 >source venv/bin/activate
 
-##Deactivate
+## Deactivate
 >deactivate
 
-#Install qrcode:
+# Install qrcode:
 pip install qrcode['pil']
 
 
-#Set Build
+# Set Build
 Tolls --> Build System --> New Build System ...
 {
     "shell_cmd": "/path/to/virtual/enviroment/venv/bin/python3 -u \"$file\"",
@@ -28,7 +28,7 @@ Tolls --> Build System --> New Build System ...
 }
 
 
-#Python Code for testing:
+# Python Code for testing:
 import qrcode
 
 img = qrcode.make("www.cmps.co.at")
@@ -36,5 +36,5 @@ img.save("mps.png")
 print("Done")
 
 
-#Change Build Settings:
+# Change Build Settings:
 cd ~/.config/sublime-text-3/Packages/User/<filename>
