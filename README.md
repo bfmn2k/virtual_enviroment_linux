@@ -6,7 +6,7 @@ sudo snap install sublime-text
 
 
 # Install Virtual Enviroment
->python3 -m venv venv
+subl>python3 -m venv venv
 
 
 ## Activate of virtual environment:
@@ -21,17 +21,19 @@ pip install qrcode['pil']
 
 # Set Build
 Tolls --> Build System --> New Build System ...
+<pre><code>
 {
     "shell_cmd": "/path/to/virtual/enviroment/venv/bin/python3 -u \"$file\"",
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.python",
 }
+</pre></code>
 
 
 # Python Code for testing:
 import qrcode
 
-img = qrcode.make("www.cmps.co.at")
+img = qrcode.make("www.mps.co.at")
 img.save("mps.png")
 print("Done")
 
