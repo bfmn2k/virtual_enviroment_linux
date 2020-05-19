@@ -1,13 +1,12 @@
+# Using a virtual environment with Sublime Text3 in Linux
+
 # Sublime Text 3:
 https://www.sublimetext.com/3
 or
 sudo snap install sublime-text
 
-
-
-# Install Virtual Enviroment
+# Install Virtual Environment
 subl>python3 -m venv venv
-
 
 ## Activate of virtual environment:
 >source venv/bin/activate
@@ -29,7 +28,6 @@ Tolls --> Build System --> New Build System ...
 }
 </pre></code>
 
-
 # Python Code for testing:
 <pre><code>
 import qrcode
@@ -38,7 +36,6 @@ img = qrcode.make("www.mps.co.at")
 img.save("mps.png")
 print("Done")
 </pre></code>
-
 
 # Change Build Settings:
 cd ~/.config/sublime-text-3/Packages/User/filename
