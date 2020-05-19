@@ -31,11 +31,13 @@ Tolls --> Build System --> New Build System ...
 
 
 # Python Code for testing:
+<pre><code>
 import qrcode
 
 img = qrcode.make("www.mps.co.at")
 img.save("mps.png")
 print("Done")
+<pre><code>
 
 
 # Change Build Settings:
