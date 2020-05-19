@@ -6,7 +6,7 @@ sudo snap install sublime-text
 
 
 # Install Virtual Enviroment
-subl>python3 -m venv venv
+>python3 -m venv venv
 
 
 ## Activate of virtual environment:
